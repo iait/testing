@@ -15,26 +15,26 @@ import com.iait.testing.repositories.EmployeeRepository;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 public class EmployeeRepositoryIntegrationTest {
- 
+
     @Autowired
     private TestEntityManager entityManager;
- 
+
     @Autowired
     private EmployeeRepository employeeRepository;
- 
+
     @Test
     public void whenFindByName_thenReturnEmployee() {
         // given
         EmployeeEntity alex = new EmployeeEntity("alex");
         entityManager.persist(alex);
         entityManager.flush();
-     
+
         // when
         EmployeeEntity found = employeeRepository.findByName(alex.getName());
-     
+
         // then
         assertThat(found.getName())
-          .isEqualTo(alex.getName());
+            .isEqualTo(alex.getName());
     }
  
 }
