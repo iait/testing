@@ -1,4 +1,4 @@
-package com.iait.testing;
+package com.iait.testing.unittests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,7 +17,7 @@ import com.iait.testing.repositories.EmployeeRepository;
 import com.iait.testing.services.EmployeeService;
 
 @RunWith(SpringRunner.class)
-public class EmployeeServiceIntegrationTest {
+public class EmployeeServiceUnitTest {
 
     @TestConfiguration
     static class EmployeeServiceTestContextConfiguration {

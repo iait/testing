@@ -21,4 +21,8 @@ public class EmployeeService {
     public List<EmployeeEntity> findAll() {
         return employeeRepository.findAll();
     }
+
+    public EmployeeEntity create(EmployeeEntity entity) {
+        return employeeRepository.save(entity);
+    }
 }

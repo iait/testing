@@ -1,4 +1,4 @@
-package com.iait.testing;
+package com.iait.testing.unittests;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -14,7 +14,7 @@ import com.iait.testing.repositories.EmployeeRepository;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-public class EmployeeRepositoryIntegrationTest {
+public class EmployeeRepositoryUnitTest {
 
     @Autowired
     private TestEntityManager entityManager;

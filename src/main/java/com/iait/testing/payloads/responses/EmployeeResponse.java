@@ -1,4 +1,4 @@
-package com.iait.testing.payloads;
+package com.iait.testing.payloads.responses;
 
 import com.iait.testing.entities.EmployeeEntity;
 

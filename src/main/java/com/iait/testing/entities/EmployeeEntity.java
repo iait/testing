@@ -18,6 +18,8 @@ public class EmployeeEntity {
     @Size(min = 3, max = 20)
     private String name;
 
+    public EmployeeEntity() {}
+
     public EmployeeEntity(String name) {
         this.name = name;
     }

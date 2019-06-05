@@ -1,4 +1,4 @@
-package com.iait.testing;
+package com.iait.testing.unittests;
 
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
@@ -25,7 +25,7 @@ import com.iait.testing.services.EmployeeService;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(EmployeeCtrl.class)
-public class EmployeeCtrlIntegrationTest {
+public class EmployeeCtrlUnitTest {
 
     @Autowired
     private MockMvc mvc;
@@ -36,13 +36,13 @@ public class EmployeeCtrlIntegrationTest {
     @Test
     public void givenEmployees_whenGetEmployees_thenReturnJsonArray()
             throws Exception {
-         
+
         EmployeeEntity alex = new EmployeeEntity("alex");
-     
+
         List<EmployeeEntity> allEmployees = Arrays.asList(alex);
-     
+
         given(employeeService.findAll()).willReturn(allEmployees);
-     
+
         mvc.perform(get("/api/employees")
           .contentType(MediaType.APPLICATION_JSON))
           .andExpect(status().isOk())
