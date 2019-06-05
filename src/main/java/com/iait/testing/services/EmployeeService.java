@@ -1,5 +1,7 @@
 package com.iait.testing.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +18,7 @@ public class EmployeeService {
         return employeeRepository.findByName(name);
     }
 
+    public List<EmployeeEntity> findAll() {
+        return employeeRepository.findAll();
+    }
 }

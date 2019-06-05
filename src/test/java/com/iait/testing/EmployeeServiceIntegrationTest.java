@@ -17,7 +17,7 @@ import com.iait.testing.repositories.EmployeeRepository;
 import com.iait.testing.services.EmployeeService;
 
 @RunWith(SpringRunner.class)
-public class EmployeeServiceImplIntegrationTest {
+public class EmployeeServiceIntegrationTest {
 
     @TestConfiguration
     static class EmployeeServiceTestContextConfiguration {
