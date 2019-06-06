@@ -1,4 +1,4 @@
-package com.iait.testing.unittests;
+package com.iait.test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

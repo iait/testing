@@ -1,4 +1,4 @@
-package com.iait.testing;
+package com.iait.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

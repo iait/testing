@@ -26,6 +26,7 @@ public class EmployeeCtrl {
     @PostMapping("/employees")
     public ResponseEntity<EmployeeResponse> createEmployee(
             @RequestBody EmployeeRequest request) {
+        System.out.println("hola");
         EmployeeEntity entityRequest = new EmployeeEntity(request.getName());
         EmployeeEntity entityResponse = employeeService.create(entityRequest);
         EmployeeResponse response = new EmployeeResponse(entityResponse);
