@@ -23,5 +23,5 @@ jobs:
   ok:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello {{ inputs.name }} {{ inputs.surname }}"
-      - run: echo "Deploy to {{ inputs.environment }}"
+      - run: echo "Hello ${{ inputs.name }} ${{ inputs.surname }}"
+      - run: echo "Deploy to ${{ inputs.environment }}"
